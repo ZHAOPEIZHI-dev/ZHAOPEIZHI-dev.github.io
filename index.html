@@ -278,6 +278,16 @@ body.scrolled .brand h1{font-size:14.5px}
 /* 独立运行（已添加到主屏）时隐藏提示、去掉额外留白抖动 */
 @media (display-mode:standalone){#a2hs{display:none!important}}
 
+
+/* 资讯极简列表 */
+.nw-row{position:relative;padding:12px 30px 12px 0;border-bottom:1px solid var(--line)}
+.nw-row:last-child{border-bottom:0}
+.nw-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.nw-who{font-weight:650;color:var(--navy);font-size:13.5px}
+.nw-date{font-size:12px;color:var(--muted);white-space:nowrap}
+.nw-up{font-size:13px;color:#4a5a72;line-height:1.6;margin-top:4px}
+.nw-x{position:absolute;right:0;top:9px;border:0;background:none;color:#b9c3d1;font-size:17px;line-height:1;cursor:pointer;padding:2px 5px}
+.nw-x:hover{color:#c0392b}
 </style>
 <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
 <link rel="icon" href="data:image/png;base64,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">
@@ -346,8 +356,9 @@ body.scrolled .brand h1{font-size:14.5px}
         <div class="d" id="s1d">--</div>
       </div>
       <div class="stat">
-        <div class="k">今日目标 / 已学</div>
+        <div class="k">今日打卡进度</div>
         <div class="v"><span id="s2">0</span><small id="s2t">/ 3h</small></div>
+        <div class="bar" id="s2bar"><i style="width:0%"></i></div>
         <div class="d" id="s2d">尚未打卡</div>
       </div>
       <div class="stat">
@@ -360,6 +371,20 @@ body.scrolled .brand h1{font-size:14.5px}
         <div class="v"><span id="s4">0</span><small>%</small></div>
         <div class="d" id="s4d">按计划推进中</div>
       </div>
+    </div>
+
+    <div class="card" id="briefCard">
+      <div class="card-h">
+        <div class="card-t">每日晨报</div>
+        <div class="card-x" id="briefMeta">--</div>
+      </div>
+      <div id="briefBox"></div>
+      <div class="row" style="margin-top:14px">
+        <button class="btn ghost sm" id="copyBrief">复制晨报文本</button>
+        <button class="btn ghost sm" id="briefHistBtn">往期晨报</button>
+        <span class="card-x">每天首次打开自动生成 · 数据取自本机计划与打卡</span>
+      </div>
+      <div id="briefHist" class="hidden" style="margin-top:12px"></div>
     </div>
 
     <div class="card">
@@ -375,14 +400,22 @@ body.scrolled .brand h1{font-size:14.5px}
     </div>
 
     <div class="card">
+      <div class="card-h">
+        <div class="card-t">打卡进度</div>
+        <div class="card-x" id="logMeta">--</div>
+      </div>
+      <div id="logPanel"></div>
+    </div>
+
+    <div class="card">
       <div class="card-h"><div class="card-t">当前阶段进度</div></div>
       <div id="stageBox"></div>
     </div>
 
     <div class="card">
       <div class="card-h">
-        <div class="card-t">最近打卡</div>
-        <div class="card-x">每晚 22:00 提醒打卡</div>
+        <div class="card-t">打卡明细</div>
+        <div class="card-x">今日记录排最前 · 每晚 22:00 提醒</div>
       </div>
       <div id="recentLog"></div>
     </div>
@@ -482,44 +515,30 @@ body.scrolled .brand h1{font-size:14.5px}
   <div id="v-news" class="hidden">
     <div class="card">
       <div class="card-h">
-        <div class="card-t">老师社媒账号直通表</div>
-        <div class="card-x">2026-11-22 逐一进 B 站/微博核实；查不到的写「未核实」，不做猜测</div>
+        <div class="card-t">老师账号速查</div>
+        <div class="card-x">只看在哪听、什么时候用</div>
       </div>
       <div id="accList"></div>
     </div>
     <div class="card">
       <div class="card-h">
-        <div class="card-t">资讯聚合看板</div>
-        <div class="card-x">每天 09:00 由 Marvis 推送，可手动补充</div>
-      </div>
-      <div class="row" style="margin-bottom:14px">
-        <select class="inp" id="newsFilter" style="width:auto">
-          <option value="">全部类型</option>
-          <option>官方公告</option><option>课程更新</option><option>老师动态</option><option>经验方法</option><option>模考活动</option>
-        </select>
+        <div class="card-t">老师最近更新</div>
+        <div class="card-x">科目老师 + 最近更新</div>
       </div>
       <div id="newsList"></div>
     </div>
     <div class="card">
-      <div class="card-h"><div class="card-t">手动录入资讯</div><div class="card-x">从晨报复制粘贴即可</div></div>
+      <div class="card-h"><div class="card-t">手动加一条更新</div><div class="card-x">只填老师、科目、更新内容</div></div>
       <div class="form">
         <div class="f3">
           <div><label>日期</label><input type="date" class="inp" id="nwDate"></div>
-          <div><label>来源</label><input type="text" class="inp" id="nwSource" placeholder="众合官网 / 觉晓 / 微博"></div>
-          <div><label>类型</label>
-            <select class="inp" id="nwType">
-              <option>官方公告</option><option>课程更新</option><option>老师动态</option><option>经验方法</option><option>模考活动</option>
-            </select>
-          </div>
+          <div><label>老师</label><input type="text" class="inp" id="nwTeacher" placeholder="如 柏浪涛"></div>
+          <div><label>科目</label><input type="text" class="inp" id="nwSubject" placeholder="如 刑法"></div>
         </div>
-        <div><label>标题</label><input type="text" class="inp" id="nwTitle" placeholder="一句话说清这条信息"></div>
-        <div class="f2">
-          <div><label>要点</label><input type="text" class="inp" id="nwSummary" placeholder="具体内容"></div>
-          <div><label>对我的影响</label><input type="text" class="inp" id="nwImpact" placeholder="要不要改计划"></div>
-        </div>
-        <div class="row">
-          <button class="btn gold" id="saveNews">加入资讯</button>
-          <select class="inp" id="nwLevel" style="width:auto"><option>重要</option><option>关注</option><option>普通</option></select>
+        <div><label>最近更新</label><input type="text" class="inp" id="nwUpdate" placeholder="一句话说清更新了什么"></div>
+        <div class="row"><button class="btn gold" id="saveNews">加入</button></div>
+      </div>
+    </div>
         </div>
       </div>
     </div>
@@ -612,6 +631,7 @@ window.QB_SEED = [{"year":"2021","paper":"卷一","no":1,"type":"单选","subjec
 <script>
 /* ================= 数据层 ================= */
 const KEY = 'fakao2027_v3';
+const QKEY = 'fakao2027_v3_qbank';   // 题库独立键：体积大、改动少，不与打卡数据共用一个键
 const DEF = {
   examDate: '2027-09-12',
   subjectDate: '2027-10-17',
@@ -684,55 +704,192 @@ const DAILY_PLAN = [{"date":"2026-11-21","wd":"周六","part":"上册","type":"n
 let S = load();
 
 /* ===== Marvis 2026-11-22 注入：老师社媒账号 + 资讯（按 id 去重，不动已有打卡/错题数据） ===== */
-const ACCOUNTS_SEED = [{"id": "a_renzhuangshi", "subject": "民法", "teacher": "任壮石", "weibo": "未核实", "bili": "法考讲师任壮石（B站直播间 1809233403，直播《27法考民法基础精讲》）", "fans": "未核实", "latest": "直播/课程：27 法考民法基础精讲（持续）", "note": "2027 民法专题讲座精讲卷在众合公开课上架；B站未找到带认证的个人空间，以直播间为准", "verified": false}, {"id": "a_bailangtao", "subject": "刑法", "teacher": "柏浪涛", "weibo": "@柏浪涛的刑法观", "bili": "无独立官方号 → 课程由「众合教育」（UID 417302260）发布", "fans": "众合教育 190.2 万", "latest": "2027 法考客观题【精讲卷】刑法 众合柏浪涛（更新中，11-02 起更，71.7 万播放）", "note": "B站搜到的「法考刑法柏浪涛」等为个人搬运号，勿跟；精讲课只在众合教育号", "verified": true}, {"id": "a_daipeng", "subject": "民诉", "teacher": "戴鹏", "weibo": "未核实（众合官微转发为主）", "bili": "无独立官方号，课程在「众合教育」号", "fans": "—", "latest": "2027 民诉精讲待上线（民诉阶段 03-08 才开始，届时再看）", "note": "B站搜到的「戴鹏」相关号仅 120 余粉，非官方，注意区分", "verified": true}, {"id": "a_wenyunyun", "subject": "刑诉", "teacher": "温云云", "weibo": "未核实", "bili": "刑诉法学温云云（UID 1892733619）", "fans": "8844", "latest": "11-19《刑诉法修订新变化！》；10 月起连续更新「认罪认罚新规」系列", "note": "无平台认证，但简介为刑诉法讲师/律师/高校副教授，更新稳定；刑诉阶段 03-29 起，先收藏", "verified": true}, {"id": "a_liuanqi", "subject": "商法", "teacher": "刘安琪", "weibo": "未核实", "bili": "商经法刘安琪（UID 394106996，个人认证「商法刘安琪」）", "fans": "18.9 万", "latest": "10-19《2026 商法主观题：唯一的监事被罢免，无需继续履职》", "note": "属觉晓体系（卷二总动员组合）；商法阶段 04-19 起用", "verified": true}, {"id": "a_lijia", "subject": "行政法", "teacher": "李佳", "weibo": "未核实（曾多次获微博十大教育大 V）", "bili": "无独立官方号，课程在「众合教育」号", "fans": "—", "latest": "2026 法考主观题冲刺版行政法（众合教育号，已完结）", "note": "B站「行政法李佳」312 粉 0 视频为仿冒号；行政法阶段 05-03 起", "verified": true}, {"id": "a_zhaomingyang", "subject": "三国法", "teacher": "赵明阳", "weibo": "三国法赵明阳", "bili": "三国法赵明阳（UID 498293883）", "fans": "1.5 千（视频 61 条）", "latest": "暑期带背 Day60《WTO 的争端解决机制》08-30 收尾", "note": "属觉晓体系；三国法阶段 05-31 起，带背系列正合适背诵阶段", "verified": true}, {"id": "a_yanmengxuan", "subject": "经知环劳", "teacher": "鄢梦萱", "weibo": "未核实", "bili": "商经法鄢梦萱（UID 526515374）", "fans": "10.6 万", "latest": "07-23《一条视频让你看懂公司间交叉持股》后基本停更", "note": "⚠ B站简介已改为「厚大法考商经独家授课教师」，疑已离开众合体系；距经知环劳阶段（06-14）还有 7 个月，6 月前须确认她 2027 课程归属再定跟谁", "verified": true}, {"id": "a_duhongbo", "subject": "理论法", "teacher": "杜洪波", "weibo": "未核实", "bili": "法学理论杜洪波（UID 574333299）", "fans": "10.2 万", "latest": "10-18《26 法考主观论述题真题回忆版解读》", "note": "另有「杜洪波法硕小课堂」（觉晓法硕）、「法硕理论法杜洪波」（华图）等小号，认准主号；理论法阶段 07-05 起", "verified": true}, {"id": "a_zhonghe", "subject": "机构", "teacher": "众合教育", "weibo": "众合法考教育", "bili": "众合教育（UID 417302260，企业认证）", "fans": "190.2 万", "latest": "11-22《三剑客集结，长春现场热情拉满啦【众合法考高峰论坛】》；11-02 起 2027 刑法精讲卷开更", "note": "你的民法、刑法、民诉、刑诉四科老师都在众合：任壮石、柏浪涛、戴鹏、温云云。听课走众合官网 zhongheschool.com / 竹马 APP / B站众合教育", "verified": true}, {"id": "a_juexiao", "subject": "机构", "teacher": "觉晓法考", "weibo": "觉晓法考教育", "bili": "觉晓法考（UID 367351760）", "fans": "16.1 万", "latest": "11-19《法考 2027 客观题 民法夏昊晗【1 轮公开课-应试解题薄讲义】》（更新中）", "note": "你的商法刘安琪、三国法赵明阳都在觉晓（卷二总动员）；小红书/视频号同名为 @觉晓法考（小红书需登录，粉丝数未核实）", "verified": true}];
-const NEWS_SEED = [{"id": "n_mv_01", "date": "2026-11-22", "source": "司法部 / 中国教育在线（预测）", "type": "官方公告", "level": "重要", "title": "2027 法考时间轴：预计 6 月中旬报名、9 月中旬客观题、10 月中旬主观题", "summary": "参照 2025（6/16–6/30 报名、9 月下旬客观题、10 月下旬主观题）、2026（6/15–6/29 报名、9 月中旬客观题）两年规律推算：2027 公告预计 6 月上旬发布，客观题报名 6 月中旬（约 15 天），客观题 9 月中旬分两批机考，主观题 10 月中旬。唯一官方入口 moj.gov.cn 报名平台，无补报名。", "impact": "你的 8 科精讲+背诵在 7 月 25 日收口，6 月报名期正好落在经知环劳阶段，报名当天只花 1 小时，别让它吃掉学习日"}, {"id": "n_mv_02", "date": "2026-11-02", "source": "众合教育（微博/B站）", "type": "课程更新", "level": "重要", "title": "2027 法考刑法精讲卷课程 11-02 开更，柏浪涛主讲", "summary": "众合官宣 2027 刑法精讲卷课程开始更新，B站「众合教育」同名课程已上线，播放 71.7 万，配套图书同步预售。听课渠道：众合官网、竹马 APP、B站众合教育。", "impact": "你 2027-02-01 开刑法，届时课程更新近 3 个月，基本可「听一节过一节」，不用追更"}, {"id": "n_mv_03", "date": "2026-11-22", "source": "B站实测核实", "type": "老师动态", "level": "重要", "title": "柏浪涛、戴鹏、李佳在 B 站都没有独立官方号，课程只在「众合教育」号", "summary": "逐一搜号核实：柏浪涛仅微博 @柏浪涛的刑法观 有本人动态；B站上「法考刑法柏浪涛」（1 万粉、1 个视频）、「戴鹏相关号」（120 粉）、「行政法李佳」（312 粉、0 视频）均为个人搬运或仿冒。三科精讲课统一在众合教育官方号（UID 417302260，190.2 万粉、企业认证）。", "impact": "别再到处搜老师个人号，刑法/民诉/行政法直接在众合教育号里按「2027 精讲卷+科目」找"}, {"id": "n_mv_04", "date": "2026-11-19", "source": "B站 · 刑诉法学温云云", "type": "老师动态", "level": "关注", "title": "温云云更新《刑诉法修订新变化！》，10 月起连更认罪认罚新规系列", "summary": "B站「刑诉法学温云云」（UID 1892733619，8844 粉）11-19 发布刑诉法修订新变化，此前连续更新认罪认罚从宽新规。账号无平台认证，简介为刑诉法讲师/律师/高校副教授，更新频率稳定。", "impact": "你的刑诉阶段 03-29 才开始，现在只收藏不追；等 3 月底按修订点对照精讲卷"}, {"id": "n_mv_05", "date": "2026-11-22", "source": "B站核实", "type": "老师动态", "level": "重要", "title": "注意：你的八科老师分属三家机构——众合 4 科、觉晓 2 科、鄢梦萱疑已转厚大", "summary": "众合：任壮石（民法）、柏浪涛（刑法）、戴鹏（民诉）、温云云（刑诉）；觉晓：刘安琪（商法）、赵明阳（三国法，均属「卷二总动员」组合）；鄢梦萱 B 站简介已标「厚大法考商经独家授课教师」，7 月后停更；杜洪波跨机构多号。", "impact": "听课渠道要分开：众合走官网/竹马/B站众合教育，觉晓走觉晓 APP/B站觉晓法考；不要指望一家 APP 听全八科"}, {"id": "n_mv_06", "date": "2026-11-23", "source": "觉晓法考（微博/B站）", "type": "模考活动", "level": "关注", "title": "觉晓「27 考季·命题新趋势」6 场名师直播，11-17 至 11-26", "summary": "11.17 韩心怡民诉、11.18 刘安琪商经、11.19 李劲松民法、11.24 徐光华刑法、11.25 夏昊晗民法、11.26 肖沛权刑诉，每晚 19:00，B站/视频号/小红书 @觉晓法考 同步。", "impact": "11-24 徐光华刑法专场可听一次，提前摸刑法命题风向；但现在是民法期中，别为直播打乱主线，能听则听、听不到等回放"}, {"id": "n_mv_07", "date": "2026-11-02", "source": "众合教育（微博）", "type": "经验方法", "level": "重要", "title": "众合官方精讲阶段方法论：打基础、树体系、懂法理；合同编没学完别急着做题", "summary": "众合微博原文：2027 的同学在精讲书合同编学完之前不要着急做题——现在法考题目综合性强，单独学完一个专题一定做不对题；第一阶段精讲卷的目标只有三个：打基础、树体系、懂法理。「听话照做，一次就过；自以为是，年年考试。」", "impact": "直接对应你现在民法上册：单章学完只做配套小练，成套真题留到合同编整块学完（约 12 月下旬）以后"}, {"id": "n_mv_08", "date": "2026-11-22", "source": "最高人民检察院 / 刑法修正案（十二）", "type": "经验方法", "level": "重要", "title": "刑法修正案（十二）是分论必考点：民企内部腐败三罪 + 行贿七类从重", "summary": "2024-03-01 施行的修正案（十二）：①非法经营同类营业罪、为亲友非法牟利罪、徇私舞弊低价折股出售国有资产罪三项扩至民营企业内部人员；②行贿罪新增七类从重情形（多次/向多人、向国家工作人员、重点工程、买官、向监察司法人员行贿等）；③单位行贿、对单位行贿条文修改。", "impact": "正对应你刑法分论第二十一讲（破坏经济秩序犯罪）与第二十三讲（贪污贿赂罪）；2027 版讲义已按新法修订，26 版笔记此两讲不能再抄"}, {"id": "n_mv_09", "date": "2026-11-19", "source": "B站 · 觉晓法考", "type": "课程更新", "level": "关注", "title": "觉晓 2027 客观题公开课更新中（民法夏昊晗「应试解题薄讲义」）", "summary": "觉晓法考（UID 367351760，16.1 万粉）11-19 更新 2027 客观题民法一轮公开课，夏昊晗主讲，带字幕未完结。", "impact": "你民法跟任壮石，这个只作第二视角查漏，不另起体系、不换老师"}, {"id": "n_mv_10", "date": "2026-11-22", "source": "B站直播 · 法考讲师任壮石", "type": "课程更新", "level": "关注", "title": "任壮石在 B 站有直播《27 法考民法基础精讲》", "summary": "B站直播间「法考讲师任壮石」（房间 1809233403）持续开展 27 法考民法基础精讲直播，与你的民法精讲同步。", "impact": "直播可作为当周进度的二次巩固，但以讲义书页进度为准，直播不追"}, {"id": "n_mv_11", "date": "2026-11-22", "source": "B站核实", "type": "老师动态", "level": "关注", "title": "已核实可长期跟的 4 个老师个人号：温云云、刘安琪、赵明阳、杜洪波", "summary": "刑诉法学温云云（8844 粉）、商经法刘安琪（18.9 万，已认证）、三国法赵明阳（UID 498293883）、法学理论杜洪波（10.2 万）。四人更新与你的后段科目一一对应，可提前关注但不必现在看。", "impact": "收藏即可：03-29 刑诉看温云云、04-19 商法看刘安琪、05-31 三国看赵明阳、07-05 理论法看杜洪波"}];
-(function mergeMarvisSeed(){
-  let ch = false;
-  S.accounts = S.accounts || [];
-  const aids = new Set(S.accounts.map(a=>a.id));
-  ACCOUNTS_SEED.forEach(a=>{ if(!aids.has(a.id)){ S.accounts.push(a); ch = true; } });
-  S.news = S.news || [];
-  const nids = new Set(S.news.map(n=>n.id));
-  NEWS_SEED.forEach(n=>{ if(!nids.has(n.id)){ S.news.push(n); ch = true; } });
-  if(ch) save();
+const ACCOUNTS_SEED = [{"id":"a_renzhuangshi","subject":"民法","teacher":"任壮石","way":"B站直播间「法考讲师任壮石」+ 众合公开课","key":"以讲义书页进度为准，直播只作二次巩固","stage":"当前（11-21 起）"},{"id":"a_bailangtao","subject":"刑法","teacher":"柏浪涛","way":"众合教育号 / 竹马 APP；微博 @柏浪涛的刑法观","key":"精讲课只在众合教育号，个人搬运号勿跟","stage":"2027-02-01 起"},{"id":"a_daipeng","subject":"民诉","teacher":"戴鹏","way":"众合教育号 / 众合官网","key":"2027 民诉精讲临近 3 月才上线，到时再看","stage":"2027-03-08 起"},{"id":"a_wenyunyun","subject":"刑诉","teacher":"温云云","way":"B站「刑诉法学温云云」","key":"跟进刑诉法修订与认罪认罚新规，3 月底对照讲义","stage":"2027-03-29 起"},{"id":"a_liuanqi","subject":"商法","teacher":"刘安琪","way":"B站「商经法刘安琪」（已认证）+ 觉晓 APP","key":"觉晓「卷二总动员」体系内","stage":"2027-04-19 起"},{"id":"a_lijia","subject":"行政法","teacher":"李佳","way":"众合教育号","key":"B站同名个人号是仿冒，别关注","stage":"2027-05-03 起"},{"id":"a_zhaomingyang","subject":"三国法","teacher":"赵明阳","way":"B站「三国法赵明阳」","key":"暑期带背系列正合背诵阶段","stage":"2027-05-31 起"},{"id":"a_yanmengxuan","subject":"经知环劳","teacher":"鄢梦萱","way":"B站「商经法鄢梦萱」","key":"⚠ 疑似已转厚大、7 月后停更，6 月前必须确认 2027 课程归属再定跟谁","stage":"2027-06-14 起"},{"id":"a_duhongbo","subject":"理论法","teacher":"杜洪波","way":"B站「法学理论杜洪波」","key":"认准主号，法硕小号不看","stage":"2027-07-05 起"},{"id":"a_zhonghe","subject":"众合（机构）","teacher":"众合教育","way":"zhongheschool.com / 竹马 APP / B站众合教育","key":"民法、刑法、民诉、刑诉四科都在这","stage":"全程"},{"id":"a_juexiao","subject":"觉晓（机构）","teacher":"觉晓法考","way":"觉晓 APP / B站觉晓法考","key":"商法、三国法（卷二总动员）在这","stage":"2027-04-19 起"}];
+const NEWS_SEED = [{"id":"n_mv_01","date":"2026-11-22","teacher":"司法部","subject":"全科","update":"2027 时间轴：6 月中旬报名、9 月中旬客观题、10 月中旬主观题"},{"id":"n_mv_02","date":"2026-11-02","teacher":"柏浪涛","subject":"刑法","update":"2027 刑法精讲卷 11-02 开更，听课走众合官网、竹马 APP"},{"id":"n_mv_03","date":"2026-11-22","teacher":"柏浪涛 / 戴鹏 / 李佳","subject":"刑法·民诉·行政法","update":"三科精讲课统一在「众合教育」号，按「2027 精讲卷 + 科目」检索"},{"id":"n_mv_04","date":"2026-11-19","teacher":"温云云","subject":"刑诉","update":"刑诉法修订新变化 + 认罪认罚新规系列连更，10 月起"},{"id":"n_mv_05","date":"2026-11-22","teacher":"鄢梦萱","subject":"经知环劳","update":"疑转厚大、7 月后停更，6 月前必须确认 2027 课程归属"},{"id":"n_mv_06","date":"2026-11-23","teacher":"徐光华 / 韩心怡 / 刘安琪 等 6 人","subject":"多科","update":"觉晓「命题新趋势」6 场直播，11-17 至 11-26 每晚 19:00"},{"id":"n_mv_07","date":"2026-11-02","teacher":"众合教育","subject":"全科","update":"精讲阶段方法：合同编学完之前不要急着做题"},{"id":"n_mv_08","date":"2026-11-22","teacher":"柏浪涛","subject":"刑法","update":"刑法修正案（十二）已入讲义：民企三罪 + 行贿七类从重，2024-03-01 施行"},{"id":"n_mv_09","date":"2026-11-19","teacher":"夏昊晗","subject":"民法","update":"觉晓 2027 客观题民法一轮公开课连载中，未完结"},{"id":"n_mv_10","date":"2026-11-22","teacher":"任壮石","subject":"民法","update":"B 站持续直播《27 法考民法基础精讲》"},{"id":"n_mv_11","date":"2026-11-22","teacher":"温云云 / 刘安琪 / 赵明阳 / 杜洪波","subject":"多科","update":"四人按各自科目稳定更新，可长期跟"}];
+/* 种子版本化：v3 = 资讯只保留科目老师 + 最近更新 */
+(function seedUpgrade(){
+  var VK = KEY + '_seedver';
+  var ver = null;
+  try{ ver = localStorage.getItem(VK); }catch(e){}
+  if(ver === '3') return;
+  S.news = NEWS_SEED.map(function(n){ return Object.assign({}, n); });
+  S.accounts = ACCOUNTS_SEED.map(function(a){ return Object.assign({}, a); });
+  try{ localStorage.setItem(VK, '3'); }catch(e){}
+  save();
 })();
 function renderAccounts(){
   const box = document.getElementById('accList');
   if(!box) return;
   const list = S.accounts || [];
   if(!list.length){ box.innerHTML = '<div class="empty">暂无账号数据</div>'; return; }
+  const th = 'padding:9px 10px;border-bottom:1px solid var(--line)';
   box.innerHTML = '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12.5px">'+
     '<thead><tr style="text-align:left;color:var(--muted);font-weight:600">'+
-    '<th style="padding:8px 10px;border-bottom:1px solid var(--line)">科目 / 老师</th>'+
-    '<th style="padding:8px 10px;border-bottom:1px solid var(--line)">微博</th>'+
-    '<th style="padding:8px 10px;border-bottom:1px solid var(--line)">B站</th>'+
-    '<th style="padding:8px 10px;border-bottom:1px solid var(--line)">粉丝</th>'+
-    '<th style="padding:8px 10px;border-bottom:1px solid var(--line)">最近更新</th>'+
-    '<th style="padding:8px 10px;border-bottom:1px solid var(--line)">备注</th></tr></thead><tbody>'+
-    list.map(a=>{const warn = /⚠/.test(a.note||'');
+    '<th style="'+th+'">老师（科目）</th>'+
+    '<th style="'+th+'">在哪听 / 看</th>'+
+    '<th style="'+th+'">有用结论</th>'+
+    '<th style="'+th+'">用到时间</th></tr></thead><tbody>'+
+    list.map(a=>{
+      const warn = /⚠/.test(a.key||a.note||'');
+      const way = a.way || a.bili || '';
+      const keytxt = a.key || cleanNewsText(a.note||'');
+      const stage = a.stage || '';
       return '<tr style="'+(warn?'background:#fff8ec':'')+'">'+
-      '<td style="padding:9px 10px;border-bottom:1px solid var(--line);white-space:nowrap"><b style="color:var(--navy)">'+esc(a.subject)+'</b><br><span style="color:var(--muted)">'+esc(a.teacher)+'</span></td>'+
-      '<td style="padding:9px 10px;border-bottom:1px solid var(--line)">'+esc(a.weibo||'—')+'</td>'+
-      '<td style="padding:9px 10px;border-bottom:1px solid var(--line)">'+esc(a.bili||'—')+'</td>'+
-      '<td style="padding:9px 10px;border-bottom:1px solid var(--line);white-space:nowrap">'+esc(a.fans||'—')+'</td>'+
-      '<td style="padding:9px 10px;border-bottom:1px solid var(--line)">'+esc(a.latest||'—')+'</td>'+
-      '<td style="padding:9px 10px;border-bottom:1px solid var(--line);color:#4a5a72">'+esc(a.note||'')+'</td></tr>';
+        '<td style="'+th+';white-space:nowrap"><b style="color:var(--navy)">'+esc(a.teacher)+'</b><br><span style="color:var(--muted)">'+esc(a.subject)+'</span></td>'+
+        '<td style="'+th+'">'+esc(way)+'</td>'+
+        '<td style="'+th+';color:#4a5a72">'+esc(keytxt)+'</td>'+
+        '<td style="'+th+';white-space:nowrap;color:var(--muted)">'+esc(stage||'—')+'</td></tr>';
     }).join('')+'</tbody></table></div>';
 }
-
-
+/* ============ 存储加固 v6 ============
+   1) 拆键：题库单独存 QKEY，主键只留打卡/错题/计划等小数据，避免每次约 1MB 全量重写
+   2) save 加固：写前合并磁盘记录 + 备份 + 写入回读校验 + 失败明确报警（不再静默）
+   3) 跨实例同步：监听 storage，多标签/多入口互不覆盖
+====================================== */
+var QB = [];              // 题库内存副本
+var STORAGE_ERR = '';     // 最近一次存储错误
+function QB_load(){
+  try{
+    var raw = localStorage.getItem(QKEY);
+    var arr = raw ? JSON.parse(raw) : [];
+    return Array.isArray(arr) ? arr : [];
+  }catch(e){ STORAGE_ERR = '读取题库失败：' + e.message; return []; }
+}
+function QB_save(){
+  try{
+    localStorage.setItem(QKEY, JSON.stringify(QB));
+    return true;
+  }catch(e){
+    STORAGE_ERR = '保存题库失败：' + e.message;
+    alert('题库保存失败：' + e.message + '\n（本地存储空间可能已满）');
+    return false;
+  }
+}
 function load(){
+  var o = null, bak = null;
   try{
     const raw = localStorage.getItem(KEY);
-    if(!raw) return JSON.parse(JSON.stringify(DEF));
-    const o = JSON.parse(raw);
-    // 兜底补字段
-    const d = JSON.parse(JSON.stringify(DEF));
-    Object.keys(d).forEach(k=>{ if(o[k]===undefined) o[k]=d[k]; });
-    return o;
-  }catch(e){ return JSON.parse(JSON.stringify(DEF)); }
+    if(!raw){
+      o = JSON.parse(JSON.stringify(DEF));
+    }else{
+      o = JSON.parse(raw);
+      if(!o || typeof o !== 'object') throw new Error('数据格式异常');
+      const d = JSON.parse(JSON.stringify(DEF));
+      Object.keys(d).forEach(k=>{ if(o[k]===undefined) o[k]=d[k]; });
+    }
+  }catch(e){
+    // 不静默回落：先试备份键，再明确告知用户
+    try{ bak = localStorage.getItem(KEY + '_bak'); }catch(e2){}
+    if(bak){
+      try{ o = JSON.parse(bak); }catch(e3){ o = null; }
+    }
+    if(!o) o = JSON.parse(JSON.stringify(DEF));
+    var msg = '读取本地数据失败：' + e.message + '\n' +
+      (bak && o ? '已自动从上次备份恢复（备份时点可能略早）。' : '备份不可用，已载入初始数据。');
+    STORAGE_ERR = msg;
+    setTimeout(function(){ alert(msg); }, 600);
+  }
+  // 题库拆键迁移：旧版题库存在主键里，迁到独立键，主键随之瘦身
+  try{
+    var qmain = Array.isArray(o.qbank) ? o.qbank : [];
+    if(qmain.length){
+      var qexist = localStorage.getItem(QKEY), qexisting = [];
+      if(qexist){ try{ qexisting = JSON.parse(qexist) || []; }catch(e4){ qexisting = []; } }
+      if(!qexisting.length) localStorage.setItem(QKEY, JSON.stringify(qmain));
+      o.qbank = [];
+      localStorage.setItem(KEY, JSON.stringify(o));
+    }
+  }catch(e5){ /* 迁移失败不影响打卡数据，题库仍保留在主键中 */ }
+  return o;
 }
-function save(){ localStorage.setItem(KEY, JSON.stringify(S)); }
+function mergeFromDisk(){
+  // 写入前把磁盘上已有的打卡/错题按 id 并入内存，避免旧实例或另一标签页刚存的记录被整体覆盖
+  try{
+    var raw = localStorage.getItem(KEY); if(!raw) return;
+    var cur = JSON.parse(raw); if(!cur) return;
+    ['logs','mistakes'].forEach(function(field){
+      var mine = S[field] = S[field] || [];
+      var seen = {}; mine.forEach(function(x){ if(x && x.id) seen[x.id] = 1; });
+      (cur[field] || []).forEach(function(x){
+        if(x && x.id && !seen[x.id]){ seen[x.id] = 1; mine.push(x); }
+      });
+    });
+  }catch(e){}
+}
+function save(){
+  mergeFromDisk();          // 先合并再写
+  S.qbank = [];             // 主键不保存题库（已在独立键）
+  var json;
+  try{ json = JSON.stringify(S); }
+  catch(e){ STORAGE_ERR = '数据序列化失败：' + e.message; alert('保存失败：' + e.message); return false; }
+  try{
+    var prev = localStorage.getItem(KEY);
+    if(prev && prev.length > 2){
+      try{ localStorage.setItem(KEY + '_bak', prev); }catch(e0){}   // 留存上一份快照
+    }
+    localStorage.setItem(KEY, json);
+    var back = localStorage.getItem(KEY);
+    if(back !== json) throw new Error('写入后回读校验不一致');
+    STORAGE_ERR = '';
+    return true;
+  }catch(e){
+    var reason = (e && (e.name === 'QuotaExceededError' || e.code === 22)) ? '本地存储空间已满' : (e.message || String(e));
+    STORAGE_ERR = '保存失败：' + reason;
+    alert('保存失败：' + reason + '\n本次改动可能未写入，请先不要关闭页面，并把此提示截图给 Marvis。');
+    return false;
+  }
+}
+/* 跨实例同步：另一标签页/入口写入了数据，本实例合并并刷新，不覆盖对方记录 */
+window.addEventListener('storage', function(e){
+  if(!e.key) return;
+  if(e.key === QKEY){ QB = QB_load(); renderQB(); return; }
+  if(e.key !== KEY) return;
+  try{
+    var cur = JSON.parse(e.newValue || 'null');
+    if(!cur) return;
+    ['logs','mistakes'].forEach(function(field){
+      var mine = S[field] = S[field] || [];
+      var seen = {}; mine.forEach(function(x){ if(x && x.id) seen[x.id] = 1; });
+      (cur[field] || []).forEach(function(x){
+        if(x && x.id && !seen[x.id]){ seen[x.id] = 1; mine.push(x); }
+      });
+    });
+    renderAll(); renderQB();
+  }catch(err){}
+});
+/* 申请持久化存储：降低系统清理站点数据的概率 */
+(function(){
+  try{
+    if(navigator.storage && navigator.storage.persist && navigator.storage.persisted){
+      navigator.storage.persisted().then(function(p){ if(!p) return navigator.storage.persist(); }).catch(function(){});
+    }
+  }catch(e){}
+})();
+/* 补录 2026-11-23 缺失打卡（用户授权代补，幂等，仅插入一次） */
+function backfill_20261123(){
+  var D = '2026-11-23', FK = KEY + '_backfill_1123';
+  try{ if(localStorage.getItem(FK) === 'done') return; }catch(e){}
+  var exists = (S.logs || []).some(function(l){ return l.date === D; });
+  if(!exists){
+    var plan = null;
+    try{ (window.DAILY_PLAN || []).forEach(function(x){ if(x.date === D) plan = x; }); }catch(e){}
+    var sub = (S.subjects || []).filter(function(x){ return x.id === 'minfa'; })[0] || {};
+    var segs = (plan && plan.segments && plan.segments.length)
+      ? plan.segments.map(function(s){ return s.title; }).join(' / ')
+      : '第一编·第一章·第二节 身份权 / 第三节 财产权 / 第四节 其他分类';
+    var ch = segs + (plan && plan.from ? ('（P' + plan.from + '-' + plan.to + '）') : '');
+    S.logs.push({
+      id: 'lbk20261123', date: D, subject: '民法（上册）', sid: 'minfa',
+      chapter: ch,
+      hours: (plan && plan.hours) || 3,
+      lec: Math.max(0, +(sub.lec || 0)),
+      quiz: Math.max(0, +(sub.quiz || 0)),
+      note: '按当日计划补录（2026-11-24 由 Marvis 代补；实际进度可在历史记录中核对，或删除后重新填写）'
+    });
+    save();
+  }
+  try{ localStorage.setItem(FK, 'done'); }catch(e){}
+}
 
 /* ================= 工具 ================= */
 const $ = s => document.querySelector(s);
@@ -781,9 +938,197 @@ function studyWeeks(){
 }
 
 /* ================= 渲染 ================= */
+
+/* ================= 每日晨报 ================= */
+let BRIEF_DATE = null;
+
+function briefPlanSegs(plan){
+  if(!plan || !plan.segments) return [];
+  return plan.segments.map(s=>{
+    const pages = s.from ? ('p.' + s.from + (s.to > s.from ? ' - p.' + s.to : '')) : '';
+    return {title:s.title, pages:pages};
+  });
+}
+function streakFrom(t){
+  // 从 t 起往前数连续打卡天数；t 当日未打卡则从 t-1 起算
+  let n = 0, d = t;
+  if(!S.logs.some(l=>l.date===d && +l.hours>0)) d = addDays(d,-1);
+  for(let i=0;i<500;i++){
+    if(S.logs.some(l=>l.date===d && +l.hours>0)){ n++; d = addDays(d,-1); } else break;
+  }
+  return n;
+}
+function briefOf(date){
+  const plan = DAILY_PLAN.find(x=>x.date===date) || null;
+  let stage = null;
+  for(let i=0;i<S.subjects.length;i++){
+    const x = S.subjects[i];
+    if(date >= x.start && date <= x.end){ stage = x; break; }
+  }
+  if(!stage && date === today()) stage = currentStage() || null;
+  const prev = addDays(date,-1);
+  const pLogs = S.logs.filter(l=>l.date===prev);
+  const pHours = Math.round(pLogs.reduce((a,b)=>a+ +b.hours,0)*10)/10;
+  const pTarget = targetHours(prev);
+  const pListen = pLogs.reduce((a,b)=>a+ +b.listen,0);
+  const pQuiz = pLogs.reduce((a,b)=>a+ +b.quiz,0);
+  const dObj = diffDays(date, S.examDate);
+  const dSub = diffDays(date, S.subjectDate);
+  const nextPlan = DAILY_PLAN.find(function(x){ return x.date>date; }) || null;
+  // 本周累计（以 date 所在周计）
+  const wEnd = pd(date), dow = wEnd.getDay()===0?6:wEnd.getDay()-1;
+  const mon = addDays(date,-dow);
+  let wSum = 0;
+  S.logs.forEach(l=>{ if(l.date>=mon && l.date<=date) wSum += +l.hours; });
+  wSum = Math.round(wSum*10)/10;
+  const news = NEWS_SEED.filter(function(n){ return n.date<=date; }).sort(function(a,b){ return a.date<b.date?1:-1; }).slice(0,3);
+  return {date, plan, stage, prev, pLogs, pHours, pTarget, pListen, pQuiz, dObj, dSub, nextPlan, wSum, news, streak: streakFrom(date)};
+}
+
+function briefText(b){
+  const L = [];
+  const wd = ['周日','周一','周二','周三','周四','周五','周六'][pd(b.date).getDay()];
+  L.push('【法考晨报】' + b.date + ' ' + wd);
+  L.push('距客观题 ' + Math.max(0,b.dObj) + ' 天 / 距主观题 ' + Math.max(0,b.dSub) + ' 天');
+  L.push('');
+  if(b.plan){
+    L.push('今日任务（' + (b.plan.part||'') + ' ' + (b.plan.pages) + ' 页 · 约 ' + b.plan.hours + 'h）');
+    briefPlanSegs(b.plan).forEach((s,i)=> L.push('  ' + (i+1) + '. ' + s.title + (s.pages? '（' + s.pages + '）':'')));
+    L.push('  看讲义 ' + b.plan.read + 'h / 听课 ' + b.plan.listen + 'h / 做题 ' + b.plan.quiz + 'h');
+  }else{
+    L.push('今日无当日页计划，按当前阶段「' + (b.stage?b.stage.name:'-') + '」自主推进');
+  }
+  L.push('');
+  L.push('昨日复盘（' + b.prev + '）：' + (b.pLogs.length? ('打卡 ' + b.pLogs.length + ' 条 ' + b.pHours + 'h / 目标 ' + b.pTarget + 'h') : '无打卡记录')
+      + (b.pLogs.length ? (b.pHours>=b.pTarget ? ' · 已达标' : ' · 差 ' + Math.round((b.pTarget-b.pHours)*10)/10 + 'h') : ''));
+  L.push('连续打卡 ' + b.streak + ' 天 · 本周 ' + b.wSum + 'h / 25h');
+  if(b.news.length){
+    L.push('');
+    L.push('资讯更新');
+    b.news.forEach(n=> L.push('  ' + n.date + ' ' + n.subject + '·' + n.teacher + '：' + n.update));
+  }
+  if(b.nextPlan){
+    L.push('');
+    L.push('明日：' + b.nextPlan.wd + ' ' + b.nextPlan.pages + ' 页 · ' + (b.nextPlan.segments[0]? b.nextPlan.segments[0].title : ''));
+  }
+  return L.join('\n');
+}
+
+function briefTip(b){
+  const tips = [];
+  if(b.pLogs.length && b.pHours < b.pTarget){
+    tips.push('昨天差 ' + (Math.round((b.pTarget-b.pHours)*10)/10) + 'h 未达标，今天把补漏塞进通勤和午休两段碎片时间，别攒到周末。');
+  }else if(!b.pLogs.length && b.date > S.startDate){
+    tips.push('昨天没有打卡记录。当天任务当天清，回头补的讲义没人替你消化。');
+  }else if(b.pLogs.length && b.pHours >= b.pTarget){
+    tips.push('昨天达标了，节奏保持住，今天先听完对应的精讲再做当章真题。');
+  }
+  if(b.plan && b.plan.pages >= 10){
+    tips.push('今日 ' + b.plan.pages + ' 页偏多，建议拆成上午、下午、晚上三段，每段结束立刻做 10 道当章题。');
+  }
+  if(b.streak >= 7) tips.push('已连续打卡 ' + b.streak + ' 天，这是目前最值钱的资产，别断。');
+  if(!tips.length) tips.push('按当日计划推进，学哪门做哪门的题。');
+  return tips.slice(0,2);
+}
+
+function renderBrief(){
+  const t = today();
+  const box = document.getElementById('briefBox');
+  if(!box) return;
+  const hist = document.getElementById('briefHist');
+  const days = [];
+  for(let i=0;i<7;i++) days.push(addDays(t,-i));
+  if(!BRIEF_DATE || days.indexOf(BRIEF_DATE) < 0) { BRIEF_DATE = t; if(hist) hist.classList.add('hidden'); }
+
+  const b = briefOf(BRIEF_DATE);
+  const wd = ['周日','周一','周二','周三','周四','周五','周六'][pd(b.date).getDay()];
+  const meta = document.getElementById('briefMeta');
+  if(meta) meta.textContent = b.date + ' ' + wd + ' · 距客观题 ' + Math.max(0,b.dObj) + ' 天' + (BRIEF_DATE===t ? ' · 今日' : ' · 往期');
+
+  let html = '';
+  if(b.plan){
+    html += '<div class="grid g4" style="margin-bottom:14px">' +
+      '<div class="stat"><div class="k">当日页数</div><div class="v">' + b.plan.pages + '<small>页</small></div><div class="d">' + (b.plan.part||'') + ' · ' + dailyTypeLabel(b.plan.type) + '</div></div>' +
+      '<div class="stat"><div class="k">看讲义</div><div class="v">' + b.plan.read + '<small>h</small></div><div class="d">通读＋标注</div></div>' +
+      '<div class="stat"><div class="k">听课</div><div class="v">' + b.plan.listen + '<small>h</small></div><div class="d">' + (b.stage ? b.stage.teacher + ' 精讲对应章节' : '对应章节') + '</div></div>' +
+      '<div class="stat"><div class="k">做题</div><div class="v">' + b.plan.quiz + '<small>h</small></div><div class="d">当章真题</div></div>' +
+      '</div>';
+    const segs = briefPlanSegs(b.plan);
+    html += segs.map(s=> '<div class="task"><div class="tx"><b>' + esc(s.title) + '</b>' +
+      (s.pages? '<div class="mt">' + esc(s.pages) + '</div>' : '') + '</div></div>').join('');
+  }else{
+    html += '<div class="empty">该日不在每日页计划区间内' + (b.stage? '，按当前阶段「' + esc(b.stage.name) + '」自主推进' : '') + '</div>';
+  }
+
+  const yState = b.pLogs.length
+    ? ('打卡 ' + b.pLogs.length + ' 条 ' + b.pHours + 'h / 目标 ' + b.pTarget + 'h · ' +
+       (b.pHours>=b.pTarget ? '已达标' : '差 ' + (Math.round((b.pTarget-b.pHours)*10)/10) + 'h'))
+    : '无打卡记录';
+  html += '<table class="tbl" style="margin-top:14px"><thead><tr><th>上一日复盘</th><th>连续打卡</th><th>本周累计</th></tr></thead><tbody><tr>' +
+    '<td>' + esc(b.prev) + ' · ' + esc(yState) + '</td>' +
+    '<td>' + b.streak + ' 天</td>' +
+    '<td>' + b.wSum + 'h / 25h</td>' +
+    '</tr></tbody></table>';
+
+  if(b.news.length){
+    html += '<div style="margin-top:14px"><div class="card-x" style="margin-bottom:8px">资讯更新</div>' +
+      b.news.map(n=> '<div class="task"><div class="tx"><b>' + esc(n.subject + ' · ' + n.teacher) + '</b>' +
+      '<div class="mt">' + esc(n.date + '  ' + n.update) + '</div></div></div>').join('') + '</div>';
+  }
+
+  if(b.nextPlan){
+    const nx = b.nextPlan;
+    html += '<div class="card-x" style="margin:14px 0 8px">明日预告</div>' +
+      '<div class="task"><div class="tx"><b>' + esc(nx.wd + ' · ' + nx.pages + ' 页 · 约 ' + nx.hours + 'h') + '</b>' +
+      '<div class="mt">' + esc((nx.segments && nx.segments[0] ? nx.segments[0].title : '') + (nx.segments && nx.segments[1] ? ' ／ ' + nx.segments[1].title : '')) + '</div></div></div>';
+  }
+
+  html += '<div class="note" style="margin-top:14px">' + briefTip(b).map(x=> esc(x)).join('<br>') + '</div>';
+  box.innerHTML = html;
+
+  if(hist && !hist.classList.contains('hidden')){
+    hist.innerHTML = '<div class="card-x" style="margin-bottom:8px">最近 7 天</div>' +
+      days.map(d=> '<button class="btn ghost sm brief-day" data-d="' + d + '" style="margin:0 8px 8px 0' +
+        (d===BRIEF_DATE? ';border-color:var(--navy);color:var(--navy)':'') + '">' + d.slice(5) +
+        (d===t? '（今天）':'') + '</button>').join('');
+  }
+}
+
+function copyBriefText(btn){
+  const b = briefOf(BRIEF_DATE || today());
+  const txt = briefText(b);
+  const done = ()=>{ if(!btn) return; const o = btn.textContent; btn.textContent = '已复制'; setTimeout(()=>{ btn.textContent = o; }, 1600); };
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(txt).then(done).catch(()=>{ fallbackCopy(txt); done(); });
+  }else{ fallbackCopy(txt); done(); }
+}
+function fallbackCopy(txt){
+  const ta = document.createElement('textarea');
+  ta.value = txt; ta.style.position='fixed'; ta.style.top='-1000px'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); }catch(e){}
+  ta.remove();
+}
+
+document.addEventListener('click', function(e){
+  const copy = e.target.closest && e.target.closest('#copyBrief');
+  if(copy){ copyBriefText(copy); return; }
+  const hb = e.target.closest && e.target.closest('#briefHistBtn');
+  if(hb){
+    const hist = document.getElementById('briefHist');
+    if(!hist) return;
+    if(hist.classList.contains('hidden')){ hist.classList.remove('hidden'); BRIEF_DATE = BRIEF_DATE || today(); renderBrief(); }
+    else hist.classList.add('hidden');
+    return;
+  }
+  const day = e.target.closest && e.target.closest('.brief-day');
+  if(day){ BRIEF_DATE = day.getAttribute('data-d'); renderBrief(); }
+});
+
 function renderAll(){
   renderHeader();
   renderOverview();
+  renderBrief();
   renderGantt();
   renderSubjects();
   renderDaily();
@@ -805,6 +1150,69 @@ function renderHeader(){
   $('#cdWeek').textContent = studyWeeks();
 }
 
+function monthHours(){
+  const m = today().slice(0,7);
+  return Math.round(S.logs.filter(l=>String(l.date).slice(0,7)===m).reduce((a,b)=>a+ +b.hours,0)*10)/10;
+}
+function monthDays(){
+  const m = today().slice(0,7);
+  return new Set(S.logs.filter(l=>String(l.date).slice(0,7)===m).map(l=>l.date)).size;
+}
+function monthTarget(){
+  const t = today();
+  const y = +t.slice(0,4), mo = +t.slice(5,7), d = +t.slice(8,10);
+  let sum = 0;
+  for(let i=1;i<=d;i++){
+    const ds = y+'-'+String(mo).padStart(2,'0')+'-'+String(i).padStart(2,'0');
+    sum += targetHours(ds);
+  }
+  return Math.round(sum*10)/10;
+}
+function weekDays(){
+  const t = pd(today());
+  const dow = t.getDay()===0 ? 6 : t.getDay()-1;
+  const mon = addDays(today(), -dow);
+  return new Set(S.logs.filter(l=>l.date>=mon && l.date<=today()).map(l=>l.date)).size;
+}
+function streakDays(){
+  const set = new Set(S.logs.map(l=>l.date));
+  let d = set.has(today()) ? today() : addDays(today(),-1);
+  let n = 0;
+  while(set.has(d) && n<500){ n++; d = addDays(d,-1); }
+  return n;
+}
+function renderLogPanel(){
+  const box = document.getElementById('logPanel');
+  if(!box) return;
+  const t = today();
+  const th = targetHours(t), dH = todayHours(), wH = weekHours(), mH = monthHours(), mT = monthTarget();
+  const totalH = Math.round(S.logs.reduce((a,b)=>a+ +b.hours,0)*10)/10;
+  const logDays = new Set(S.logs.map(l=>l.date)).size;
+  const avgH = logDays>0 ? Math.round(totalH/logDays*10)/10 : 0;
+  const rows = [
+    ['今日', dH, th, '今日目标 '+th+'h'],
+    ['本周', wH, 25, '周一至今天目标 25h'],
+    ['本月', mH, mT, '本月至今目标 '+mT+'h']
+  ].map(r=>{
+    const pct = r[2]>0 ? clamp(Math.round(r[1]/r[2]*100),0,100) : 0;
+    const cls = pct>=100 ? ' ok' : (pct<50 ? ' warn' : '');
+    return '<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px">'+
+        '<b style="color:var(--navy)">'+r[0]+'</b>'+
+        '<span style="font-size:12.5px;color:var(--muted)"><b style="color:var(--navy);font-size:14px">'+r[1]+'</b> / '+r[2]+'h · '+pct+'%</span></div>'+
+      '<div class="bar'+cls+'"><i style="width:'+pct+'%"></i></div>'+
+      '<div class="barlabel" style="margin-bottom:12px"><span>'+r[3]+'</span><span>'+(pct>=100?'已达标':'还差 '+Math.round((r[2]-r[1])*10)/10+'h')+'</span></div>';
+  }).join('');
+  box.innerHTML = rows +
+    '<div class="grid g4" style="margin-top:4px">'+
+      '<div class="stat" style="padding:12px 14px"><div class="k">连续打卡</div><div class="v" style="font-size:20px">'+streakDays()+'<small>天</small></div><div class="d">今天没打不算断</div></div>'+
+      '<div class="stat" style="padding:12px 14px"><div class="k">本月出勤</div><div class="v" style="font-size:20px">'+monthDays()+'<small>天</small></div><div class="d">'+t.slice(0,7)+' 累计 '+mH+'h</div></div>'+
+      '<div class="stat" style="padding:12px 14px"><div class="k">日均时长</div><div class="v" style="font-size:20px">'+avgH+'<small>h</small></div><div class="d">按 '+logDays+' 个打卡日算</div></div>'+
+      '<div class="stat" style="padding:12px 14px"><div class="k">累计投入</div><div class="v" style="font-size:20px">'+totalH+'<small>h</small></div><div class="d">共 '+S.logs.length+' 条记录</div></div>'+
+    '</div>';
+  const meta = document.getElementById('logMeta');
+  if(meta) meta.textContent = '累计 '+S.logs.length+' 条 · '+totalH+'h';
+}
+
 function renderOverview(){
   const cur = currentStage();
   const t = today();
@@ -816,9 +1224,17 @@ function renderOverview(){
 
   const th = targetHours(t);
   const done = todayHours();
+  const todayLogs = S.logs.filter(l=>l.date===t);
+  const pct2 = th>0 ? clamp(Math.round(done/th*100),0,100) : 0;
   $('#s2').textContent = Math.round(done*10)/10;
   $('#s2t').textContent = '/ ' + th + 'h';
-  $('#s2d').textContent = done===0 ? '尚未打卡' : (done>=th ? '已达标，保持' : '还差 ' + Math.round((th-done)*10)/10 + 'h');
+  const bar2 = $('#s2bar');
+  if(bar2){
+    bar2.className = 'bar' + ((th>0 && done>=th) ? ' ok' : '');
+    bar2.innerHTML = '<i style="width:'+pct2+'%"></i>';
+  }
+  $('#s2d').textContent = (done===0 ? '尚未打卡' : (done>=th ? '已达标 ' + pct2 + '%' : '还差 ' + Math.round((th-done)*10)/10 + 'h（' + pct2 + '%）')) +
+    ' · 今日打卡 ' + todayLogs.length + ' 条';
 
   const wh = weekHours();
   $('#s3').textContent = wh;
@@ -833,14 +1249,23 @@ function renderOverview(){
   renderTasks();
   renderStageBox();
 
-  // 最近打卡
-  const list = S.logs.slice().sort((a,b)=> a.date<b.date?1:-1).slice(0,5);
+  renderLogPanel();
+
+  // 打卡明细
+  const list = S.logs.slice().sort((a,b)=> a.date<b.date?1:-1).slice(0,8);
   if(!list.length){
     $('#recentLog').innerHTML = '<div class="empty">还没有打卡记录，去「打卡记录」页录入第一条</div>';
   }else{
-    $('#recentLog').innerHTML = '<table class="tbl"><thead><tr><th>日期</th><th>科目</th><th>章节</th><th>时长</th><th>备注</th></tr></thead><tbody>' +
-      list.map(l=>'<tr><td class="mono">'+l.date+'</td><td>'+esc(l.subject)+'</td><td>'+esc(l.chapter||'—')+
-        '</td><td class="mono">'+l.hours+'h</td><td>'+esc(l.note||'—')+'</td></tr>').join('') + '</tbody></table>';
+    $('#recentLog').innerHTML = '<table class="tbl"><thead><tr><th>日期</th><th>科目</th><th>章节</th><th>时长</th><th>听课</th><th>做题</th></tr></thead><tbody>' +
+      list.map(l=>{
+        const isToday = l.date===t;
+        return '<tr'+(isToday?' style="background:#f5f9ff"':'')+'>'+
+          '<td class="mono">'+l.date+(isToday?' <b style="color:var(--gold)">今日</b>':'')+'</td>'+
+          '<td>'+esc(l.subject)+'</td><td>'+esc(l.chapter||'—')+'</td>'+
+          '<td class="mono"><b>'+l.hours+'h</b></td>'+
+          '<td class="mono">'+(l.lec!=null?l.lec+'%':'—')+'</td>'+
+          '<td class="mono">'+(l.quiz!=null?l.quiz+'%':'—')+'</td></tr>';
+      }).join('') + '</tbody></table>';
   }
 }
 
@@ -865,13 +1290,13 @@ function renderTasks(){
     list.push({k:'due', w:0.5, tx:'重做到期错题 '+dueN+' 道（三遍滚动）', mt:'去「错题池」页勾掉，别只收藏不做'});
   }
   if(HIDDEN_STAGE.indexOf(cur.id)>=0){
-    list.push({k:'a', w:1, tx:'错题回炉：重做历史错题 40 分钟', mt:'只做错的，不做整章'});
+    list.push({k:'a', w:1, tx:'错题回炉：重做历史错题', mt:'只做错的，不做整章'});
     list.push({k:'b', w:1, tx:'近五年真题套卷 1 套（计时）', mt:'按考试节奏，要计时'});
-    list.push({k:'c', w:0.5, tx:'背诵卷滚动 30 分钟', mt:'理论法 / 三国 / 经知环劳轮换'});
+    list.push({k:'c', w:0.5, tx:'背诵卷滚动', mt:'理论法 / 三国 / 经知环劳轮换'});
   }else{
-    list.push({k:'a', w: Math.min(1.2, th*0.4), tx:'听《'+cur.name+'》'+cur.type+' 约 '+Math.round(Math.min(1.2,th*0.4)*60)+' 分钟', mt:cur.teacher});
-    list.push({k:'b', w: Math.min(0.9, th*0.3), tx:'做《'+cur.name+'》当章真题 约 '+Math.round(Math.min(0.9,th*0.3)*60)+' 分钟', mt:'听完一章当天必做'});
-    list.push({k:'c', w: 0.4, tx:'旧科错题回顾 20 分钟', mt:'压制遗忘'});
+    list.push({k:'a', w: Math.min(1.2, th*0.4), tx:'听《'+cur.name+'》'+cur.type, mt:cur.teacher});
+    list.push({k:'b', w: Math.min(0.9, th*0.3), tx:'做《'+cur.name+'》当章真题', mt:'听完一章当天必做'});
+    list.push({k:'c', w: 0.4, tx:'旧科错题回顾', mt:'压制遗忘'});
   }
   if(pd(t).getDay()===0){
     list.push({k:'d', w:1, tx:'周复盘：本周错题二次重做 + 下周任务确认', mt:'固定动作'});
@@ -963,7 +1388,7 @@ function renderSubjects(){
 
 function renderLogs(){
   const t = today();
-  $('#lgDate').value = t;
+  if(!$('#lgDate').value) $('#lgDate').value = t;   // 只补默认值，不覆盖用户已选日期（修 v5 切页丢日期）
   const sel = $('#lgSub');
   sel.innerHTML = S.subjects.filter(x=>HIDDEN_STAGE.indexOf(x.id)<0)
     .map(s=>'<option value="'+s.id+'">'+esc(s.name)+'（'+s.teacher+'）</option>').join('');
@@ -991,7 +1416,7 @@ function plusDays(ds,n){
 function dueList(){ return (S.mistakes||[]).filter(m=> !m.done && m.due && m.due<=today()); }
 
 function renderMistakes(){
-  $('#msDate').value = today();
+  if(!$('#msDate').value) $('#msDate').value = today();
   const sel = $('#msSub');
   if(!sel.options.length){
     sel.innerHTML = S.subjects.filter(x=>HIDDEN_STAGE.indexOf(x.id)<0)
@@ -1166,20 +1591,20 @@ function qbParse(raw){
 }
 
 function qbAdd(list){
-  S.qbank = S.qbank || [];
+  QB = QB || [];
   let added = 0, dup = 0;
   list.forEach(q=>{
     q.stem = (q.stem||'').trim();
     if(!q.stem) return;
     const key = (q.year||'') + '|' + (q.subject||'') + '|' + q.stem.slice(0,40);
-    if(S.qbank.some(x=> ((x.year||'')+'|'+(x.subject||'')+'|'+x.stem.slice(0,40)) === key)){ dup++; return; }
-    S.qbank.push({id:'q'+Date.now()+Math.floor(Math.random()*1000),
+    if(QB.some(x=> ((x.year||'')+'|'+(x.subject||'')+'|'+x.stem.slice(0,40)) === key)){ dup++; return; }
+    QB.push({id:'q'+Date.now()+Math.floor(Math.random()*1000),
       year:q.year||'', paper:q.paper||'', subject:q.subject||'', detail:q.detail||'', type:q.type||'单选',
       stem:q.stem, opts:q.opts||[], answer:q.answer||'', analysis:q.analysis||'',
       done:0, correct:0, inPool:0});
     added++;
   });
-  save();
+  QB_save();
   return {added:added, dup:dup};
 }
 
@@ -1187,16 +1612,16 @@ function qbAdd(list){
 function seedQBank(){
   if(!window.QB_SEED || !window.QB_SEED.length) return {added:0};
   if(S.qbSeedOff) return {added:0};
-  S.qbank = S.qbank || [];
+  QB = QB || [];
   const keyOf = q => (q.year||'') + '|' + (q.subject||'') + '|' + String(q.stem||'').slice(0,40);
-  const keys = new Set(S.qbank.map(keyOf));
+  const keys = new Set(QB.map(keyOf));
   const need = window.QB_SEED.filter(q => !keys.has(keyOf(q)));
   if(!need.length) return {added:0};
   return qbAdd(need);
 }
 
 function renderQB(){
-  const bank = S.qbank || (S.qbank=[]);
+  const bank = QB || (QB=[]);
   const done = bank.filter(q=>q.done);
   const right = done.filter(q=>q.correct);
   const set=(id,v)=>{ const e=document.getElementById(id); if(e) e.textContent=v; };
@@ -1263,7 +1688,7 @@ function initQB(){
   });
   document.getElementById('qbClear').addEventListener('click', ()=>{
     if(!confirm('确认清空整个真题库？该操作不可撤销，错题池不受影响。清空后将停止自动载入内置真题库，可用「恢复内置题库」重新载入。')) return;
-    S.qbank = []; S.qbSeedOff = 1; save(); renderQB();
+    QB = []; S.qbSeedOff = 1; QB_save(); save(); renderQB();
     document.getElementById('qbMsg').textContent = '题库已清空；点「恢复内置题库」可重新载入 2021-2025 真题。';
   });
   const rh = document.getElementById('qbReseed');
@@ -1280,7 +1705,7 @@ function initQB(){
   document.addEventListener('click', e=>{
     const b = e.target.closest('[data-qbact]');
     if(!b) return;
-    const q = (S.qbank||[]).find(x=>x.id===b.dataset.id);
+    const q = (QB||[]).find(x=>x.id===b.dataset.id);
     if(!q) return;
     const act = b.dataset.qbact;
     if(act==='right'){ q.done=1; q.correct=1; }
@@ -1301,36 +1726,39 @@ function initQB(){
       }
     }
     if(act==='reset'){ q.done=0; q.correct=0; }
-    save(); renderQB(); renderOverview();
+    QB_save(); save(); renderQB(); renderOverview();
   });
 }
 
 /* ================= 资讯 ================= */
+function cleanNewsText(s){
+  return String(s==null?'':s)
+    .replace(/[（(][^（）()]*(粉|UID|未核实|来源不明)[^（）()]*[）)]/g,'')
+    .replace(/[，、]?[^，。；]*(粉|UID\s*\d+|未核实|来源不明)[^，。；]*[，。；]?/g,'')
+    .replace(/[，、]{2,}/g,'，')
+    .replace(/^[，、。\s]+/,'')
+    .replace(/\s{2,}/g,' ')
+    .trim();
+}
 function renderNews(){
   const box = document.getElementById('newsList');
   if(!box) return;
-  const f = document.getElementById('newsFilter').value;
   let list = (S.news||[]).slice().sort((a,b)=> a.date<b.date?1:-1);
-  if(f) list = list.filter(n=>n.type===f);
   if(!list.length){
-    box.innerHTML = '<div class="empty">暂无资讯。每天 09:00 Marvis 会推送聚合结果，你也可以在下方手动录入。</div>';
+    box.innerHTML = '<div class="empty">暂无更新。每天 09:00 Marvis 会推送。</div>';
+    renderAccounts();
     return;
   }
   box.innerHTML = list.map(n=>{
-    const cls = n.level==='重要'?'cs':(n.level==='关注'?'bs':'gray');
-    return '<div style="border:1px solid var(--line);border-radius:11px;padding:14px 16px;margin-bottom:10px">'+
-      '<div class="row" style="justify-content:space-between;margin-bottom:6px">'+
-        '<span class="tag '+cls+'">'+esc(n.level)+'</span>'+
-        '<span style="font-size:11.5px;color:var(--muted)">'+n.date+' · '+esc(n.source)+' · '+esc(n.type)+'</span></div>'+
-      '<div style="font-weight:650;color:var(--navy);margin-bottom:4px">'+esc(n.title)+'</div>'+
-      '<div style="font-size:13px;color:#4a5a72">'+esc(n.summary||'')+'</div>'+
-      (n.impact?'<div style="font-size:12.5px;color:var(--gold);margin-top:6px">影响：'+esc(n.impact)+'</div>':'')+
-      '<div class="row" style="margin-top:8px"><button class="btn danger sm" data-delnews="'+n.id+'">删除</button></div>'+
+    const who = (n.subject ? n.subject + ' · ' : '') + (n.teacher||'');
+    return '<div class="nw-row">'+
+      '<div class="nw-h"><span class="nw-who">'+esc(who)+'</span><span class="nw-date">'+esc(n.date)+'</span></div>'+
+      '<div class="nw-up">'+esc(n.update||n.point||'')+'</div>'+
+      '<button class="nw-x" data-delnews="'+n.id+'" title="删除">×</button>'+
     '</div>';
   }).join('');
   renderAccounts();
 }
-
 function renderSettings(){
   $('#stObj').value = S.examDate;
   $('#stSub').value = S.subjectDate;
@@ -1402,9 +1830,9 @@ $('#saveLog').addEventListener('click', ()=>{
   sub.quiz = Math.max(sub.quiz, quiz);
   save();
 
-  $('#lgHours').value=''; $('#lgChap').value=''; $('#lgLec').value=''; $('#lgQuiz').value=''; $('#lgNote').value='';
+  $('#lgDate').value = today(); $('#lgHours').value=''; $('#lgChap').value=''; $('#lgLec').value=''; $('#lgQuiz').value=''; $('#lgNote').value='';
   renderLogs(); renderOverview(); renderSubjects(); renderGantt();
-  alert('已保存，进度已更新');
+  alert(STORAGE_ERR ? ('已保存（注意：' + STORAGE_ERR + '）') : '已保存，进度已更新，本地存储校验通过');
 });
 
 // 删除打卡
@@ -1466,26 +1894,20 @@ $('#saveMis').addEventListener('click', ()=>{
   renderMistakes(); renderOverview();
 });
 $('#msFilter').addEventListener('change', renderMistakes);
-if(document.getElementById('newsFilter')) document.getElementById('newsFilter').addEventListener('change', renderNews);
 if(document.getElementById('nwDate')) document.getElementById('nwDate').value = today();
 if(document.getElementById('saveNews')) document.getElementById('saveNews').addEventListener('click', ()=>{
-  const ti = document.getElementById('nwTitle').value.trim();
-  if(!ti){ alert('请填写标题'); return; }
+  const up = document.getElementById('nwUpdate').value.trim();
+  if(!up){ alert('请填写更新内容'); return; }
   S.news = S.news || [];
   S.news.push({
     id:'n'+Date.now(),
     date: document.getElementById('nwDate').value || today(),
-    source: document.getElementById('nwSource').value.trim() || '手动录入',
-    type: document.getElementById('nwType').value,
-    title: ti,
-    summary: document.getElementById('nwSummary').value.trim(),
-    impact: document.getElementById('nwImpact').value.trim(),
-    level: document.getElementById('nwLevel').value
+    teacher: document.getElementById('nwTeacher').value.trim(),
+    subject: document.getElementById('nwSubject').value.trim(),
+    update: up
   });
   save();
-  document.getElementById('nwTitle').value='';
-  document.getElementById('nwSummary').value='';
-  document.getElementById('nwImpact').value='';
+  document.getElementById('nwUpdate').value='';
   renderNews();
 });
 
@@ -1547,6 +1969,8 @@ document.addEventListener('click', e=>{
 document.addEventListener('DOMContentLoaded', ()=>{ renderDailyList(); });
 
 /* ================= 启动 ================= */
+QB = QB_load();               // 题库走独立键
+backfill_20261123();          // 代补 2026-11-23 打卡（幂等）
 renderAll();
 renderDailyList();
 seedQBank();
